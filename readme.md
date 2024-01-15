@@ -32,9 +32,9 @@ Projekta mērķis bija automatizēt ikdienas procesus, tāpēc es nolēmu izveid
 `email_notification.py` fails satur funkciju, kas ļauj sūtīt e-pastu, un tā sastāv no vairākām svarīgām daļām:
 
 1. **E-pasta iestatījumi:**
-   - `sender_email`: E-pasta adrese, no kuras tiks nosūtīts ziņojums (piemēram, pazinojumubots@gmail.com).
-   - `receiver_email`: E-pasta adrese, uz kuru tiks nosūtīts ziņojums (piemēram, andvoskin@gmail.com).
-   - `subject`: Temats jeb virsraksts, kas tiks izmantots e-pasta ziņojuma nosūtīšanā (piemēram, "Notification").
+   - `sender_email`: E-pasta adrese, no kuras tiks nosūtīts ziņojums).
+   - `receiver_email`: E-pasta adrese, uz kuru tiks nosūtīts ziņojums).
+   - `subject`: Temats jeb virsraksts, kas tiks izmantots e-pasta ziņojuma nosūtīšanā.
 
 2. **Ziņojuma veidošana:**
    - `msg`: `MIMEMultipart` objekts, kas ļauj veidot ziņojumu ar vairākām daļām.
