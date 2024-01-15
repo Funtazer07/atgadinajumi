@@ -32,8 +32,8 @@ Projekta mērķis bija automatizēt ikdienas procesus, tāpēc es nolēmu izveid
 `email_notification.py` fails satur funkciju, kas ļauj sūtīt e-pastu, un tā sastāv no vairākām svarīgām daļām:
 
 1. **E-pasta iestatījumi:**
-   - `sender_email`: E-pasta adrese, no kuras tiks nosūtīts ziņojums).
-   - `receiver_email`: E-pasta adrese, uz kuru tiks nosūtīts ziņojums).
+   - `sender_email`: E-pasta adrese, no kuras tiks nosūtīts ziņojums.
+   - `receiver_email`: E-pasta adrese, uz kuru tiks nosūtīts ziņojums.
    - `subject`: Temats jeb virsraksts, kas tiks izmantots e-pasta ziņojuma nosūtīšanā.
 
 2. **Ziņojuma veidošana:**
@@ -41,10 +41,10 @@ Projekta mērķis bija automatizēt ikdienas procesus, tāpēc es nolēmu izveid
    - Iestatīti svarīgākie ziņojuma lauki, piemēram, no, kam un temats.
 
 3. **SMTP servera iestatījumi:**
-   - `smtp_server`: Adrese SMTP servera, kas tiks izmantots (piemēram, smtp.gmail.com).
-   - `smtp_port`: Porta numurs, kurā notiks savienojums ar SMTP serveri (piemēram, 587).
-   - `smtp_username`: Lietotājvārds, kas tiks izmantots SMTP servera autentifikācijai (piemēram, pazinojumubots@gmail.com).
-   - `smtp_password`: Parole, kas tiks izmantota SMTP servera autentifikācijai (piemēram, "scdr bvpo hxrf feyv").
+   - `smtp_server`: Adrese SMTP servera, kas tiks izmantots.
+   - `smtp_port`: Porta numurs, kurā notiks savienojums ar SMTP serveri.
+   - `smtp_username`: Lietotājvārds, kas tiks izmantots SMTP servera autentifikācijai.
+   - `smtp_password`: Parole, kas tiks izmantota SMTP servera autentifikācijai.
 
 4. **Funkcija `send_email(msg_to_user: str)`:**
    - `send_email` funkcija ņem ievadā ziņojuma tekstu (`msg_to_user`), pieliek to e-pasta ziņojuma daļai un sūta to uz norādītajām e-pasta adresēm.
@@ -55,4 +55,4 @@ Projekta mērķis bija automatizēt ikdienas procesus, tāpēc es nolēmu izveid
    - `try` un `except` bloks tiek izmantots, lai apstrādātu iespējamās kļūdas, piemēram, problēmas ar savienojumu vai autentifikāciju.
    - Ja kļūda notiek, tā tiek iegūta un nekādā veidā netiek attēlota vai izvadīta.
 
-Šī faila mērķis ir nodrošināt atsevišķu moduli e-pasta nosūtīšanai, kas var tikt izmantots citās programmās, piemēram, galvenajā failā `main.py`.
+Šī faila mērķis ir nodrošināt atsevišķu moduli e-pasta nosūtīšanai, kas var tikt izmantots galvenajā failā `main.py`.
